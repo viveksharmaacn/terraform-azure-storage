@@ -1,7 +1,6 @@
 provider "azurerm" {
   features {}
-  # Use Azure CLI Authentication
-  use_azure_cli_auth = true
+  subscription_id = var.subscription_id
 }
 
 resource "azurerm_storage_account" "example" {
