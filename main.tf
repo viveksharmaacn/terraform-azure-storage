@@ -1,7 +1,7 @@
 provider "azurerm" {
   features {}
   subscription_id = "b473335b-e612-444d-a496-6ce2680a7f69"
-
+}
 resource "azurerm_storage_account" "example" {
   name                     = var.storage_account_name
   resource_group_name      = var.resource_group_name
