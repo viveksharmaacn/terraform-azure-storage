@@ -1,5 +1,7 @@
 provider "azurerm" {
   features {}
+  # Use Azure CLI Authentication
+  use_azure_cli_auth = true
 }
 
 resource "azurerm_storage_account" "example" {
